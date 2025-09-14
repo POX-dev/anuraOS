@@ -3,9 +3,8 @@
   publish = "build"
 
 [[plugins]]
-  package = "@netlify/plugin-apt"
-  version = "1.0.0"
+package = "@netlify/plugin-apt"
 
-[build.environment]
-  SYSTEM_PACKAGE_MANAGER = "apt-get"
-  SYSTEM_PACKAGES = ["clang"]
+[plugins.inputs]
+SYSTEM_PACKAGE_MANAGER = "apt-get"
+SYSTEM_PACKAGES = ["clang"]
